@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="coursework.snake.SnakeModelTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-28T19:22:28.832Z" hostname="DEAKEL" time="0.046">
+  <properties/>
+  <testcase name="speedCanBeChanged()" classname="coursework.snake.SnakeModelTest" time="0.02"/>
+  <testcase name="updateKeepsHeadInsideThePlayArea()" classname="coursework.snake.SnakeModelTest" time="0.003"/>
+  <testcase name="startsInsideThePlayArea()" classname="coursework.snake.SnakeModelTest" time="0.0"/>
+  <testcase name="modelReturnsExpectedNumberOfSegments()" classname="coursework.snake.SnakeModelTest" time="0.002"/>
+  <testcase name="rejectsInvalidElapsedTime()" classname="coursework.snake.SnakeModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

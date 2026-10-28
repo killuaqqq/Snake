@@ -76,7 +76,18 @@ public class SnakeApp extends Application {
             draw();
         });
 
-        HBox controls = new HBox(12, speedLabel, speedSlider, pauseButton, restartButton);
+        Button exitButton = new Button("Выход");
+        exitButton.setOnAction(event -> stage.close());
+
+
+        HBox controls = new HBox(
+                12,
+                speedLabel,
+                speedSlider,
+                pauseButton,
+                restartButton,
+                exitButton
+        );
         controls.setAlignment(Pos.CENTER);
         controls.setPadding(new Insets(12));
 

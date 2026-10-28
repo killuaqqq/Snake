@@ -72,3 +72,8 @@ tasks.withType(Javadoc).configureEach {
 
     options.addStringOption('locale', 'ru_RU')
 }
+
+tasks.withType(JavaExec).configureEach {
+    standardOutput = System.out
+    errorOutput = System.err
+}

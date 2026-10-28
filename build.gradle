@@ -1,0 +1,74 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'university.coursework'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+javafx {
+    version = '21.0.2'
+    modules = ['javafx.controls']
+}
+
+dependencies {
+    implementation 'org.apache.logging.log4j:log4j-api:2.24.3'
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.3'
+
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // JavaFX native libraries for Windows
+    runtimeOnly 'org.openjfx:javafx-graphics:21.0.2:win'
+    runtimeOnly 'org.openjfx:javafx-controls:21.0.2:win'
+    runtimeOnly 'org.openjfx:javafx-base:21.0.2:win'
+}
+
+application {
+    mainClass = 'coursework.snake.Launcher'
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes 'Main-Class': 'coursework.snake.Launcher'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    exclude 'META-INF/*.SF',
+            'META-INF/*.DSA',
+            'META-INF/*.RSA',
+            'module-info.class',
+            'META-INF/versions/**/module-info.class'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(Javadoc).configureEach {
+    options.encoding = 'UTF-8'
+    options.charSet = 'UTF-8'
+    options.docEncoding = 'UTF-8'
+
+    options.addStringOption('locale', 'ru_RU')
+}

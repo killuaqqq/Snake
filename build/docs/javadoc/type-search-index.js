@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"coursework.snake","l":"Launcher"},{"p":"coursework.snake","l":"SnakeModel.Point"},{"p":"coursework.snake","l":"SnakeApp"},{"p":"coursework.snake","l":"SnakeModel"}];updateSearchResults();

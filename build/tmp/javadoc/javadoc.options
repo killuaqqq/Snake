@@ -1,0 +1,13 @@
+-locale 'ru_RU'
+-classpath 'D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\build\\classes\\java\\main;D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\build\\resources\\main;C:\\Users\\Dartp\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-core\\2.24.3\\7f6a261243ca767c7f38fd4b542bcde626c8894e\\log4j-core-2.24.3.jar;C:\\Users\\Dartp\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.24.3\\b02c125db8b6d295adf72ae6e71af5d83bce2370\\log4j-api-2.24.3.jar;C:\\Users\\Dartp\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-controls\\21.0.2\\76c2c5b29a08edfbf56266079fcefb8c490b4a49\\javafx-controls-21.0.2-win.jar;C:\\Users\\Dartp\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-graphics\\21.0.2\\e5d2f774d53e2ad0aa13057c82b3ff09f515e200\\javafx-graphics-21.0.2-win.jar;C:\\Users\\Dartp\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-base\\21.0.2\\7b3bb793fde4402c0eeb5204c08597c6be30362e\\javafx-base-21.0.2-win.jar'
+-quiet 
+-encoding 'UTF-8'
+-d 'D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\build\\docs\\javadoc'
+-windowtitle 'snake-coursework 1.0.0 API'
+-doctitle 'snake-coursework 1.0.0 API'
+-charset 'UTF-8'
+-docencoding 'UTF-8'
+-notimestamp 
+'D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\src\\main\\java\\coursework\\snake\\Launcher.java'
+'D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\src\\main\\java\\coursework\\snake\\SnakeApp.java'
+'D:\\учеба\\2 курс 1 сем\\jva\\cursach\\Zmeyka\\src\\main\\java\\coursework\\snake\\SnakeModel.java'

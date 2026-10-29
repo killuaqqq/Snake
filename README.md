@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Java 17 · JavaFX · Gradle · JUnit 5 · Log4j2
+  Java 27 · JavaFX · Gradle · JUnit 5 · Log4j2
 </p>
 
 ---
@@ -50,7 +50,7 @@
 
 | Технология | Назначение |
 |---|---|
-| Java 17 | Язык разработки |
+| Java 16 | Язык разработки |
 | JavaFX 21.0.2 | Графический интерфейс |
 | Gradle | Сборка проекта и управление зависимостями |
 | JUnit 5 | Автоматическое тестирование |
@@ -194,33 +194,11 @@ logs/snake.log
 src/main/resources/log4j2.xml
 ```
 
-## Структура проекта
-
-```text
-Zmeyka/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── coursework/
-│   │   │       └── snake/
-│   │   │           ├── SnakeApp.java
-│   │   │           └── SnakeModel.java
-│   │   └── resources/
-│   │       └── log4j2.xml
-│   └── test/
-│       └── java/
-│           └── coursework/
-│               └── snake/
-│                   └── SnakeModelTest.java
-├── build.gradle
-├── settings.gradle
-└── README.md
-```
-
 ### Основные классы
 
 | Класс | Ответственность |
 |---|---|
+| `Launcher` | Класс запуска |
 | `SnakeApp` | JavaFX-окно, отрисовка змейки и пользовательское управление |
 | `SnakeModel` | Модель движения, отражения от границ и сегментов змейки |
 | `SnakeModelTest` | Проверка логики модели с помощью JUnit 5 |
